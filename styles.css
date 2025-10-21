@@ -23,7 +23,7 @@ body {
 
 /* Left section */
 .left {
-    flex: 1;
+    flex: 1.4;
     background-image: url(images/v4lia.jpg);
     background-size: cover;
     background-position: center center;
@@ -49,7 +49,7 @@ body {
     font-size: 8rem;
     letter-spacing: 2.5rem;
     text-align: left;
-    margin-bottom: .25rem;
+    margin-bottom: .10rem;
 }
 
 .subtitle {
@@ -57,7 +57,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
 }
 
