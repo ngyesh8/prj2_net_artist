@@ -1,0 +1,95 @@
+@import url("https://use.typekit.net/ryr8gkr.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left section */
+.left {
+    flex: 1;
+    background-image: url(images/v4lia.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Right section */
+.right {
+    flex: 1;
+    background-color: #fff;
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    font-family: "oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+    letter-spacing: 2.5rem;
+    text-align: left;
+    margin-bottom: .25rem;
+}
+
+.subtitle {
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section {
+    margin-left: 10%;
+    width: fit-content;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.section-end {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    display: block;
+    margin: 0.25rem 0;
+}
+
+a:hover {
+    opacity: 0.6;
+}
