@@ -13,6 +13,7 @@ body {
     background-color: #fff;
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 
 .container {
@@ -22,50 +23,83 @@ body {
 }
 
 /* Left section */
-.left {
-    flex: 1.4;
-    background-image: url(images/v4lia.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.left-main {
+    flex: 1.8;
+    top: 5%;
+    background-color: #fff;
+    position: relative; 
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    right: -7.8%;
+    overflow: hidden;
+}
+
+.left-main iframe {
+    position: absolute;
+    top: -195px;
+    left: -140px;
+    width: 1200px;
+    height: 880px;
+    border: 0;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.nametag {
+    position: absolute;
+    top: 87%;
+    right: 13%;
 }
 
 
 /* Right section */
-.right {
-    flex: 1;
-    background-color: #fff;
+.right-main {
+    flex: .3;
+    background-color: #f0f0f4;
     position: relative;
     padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .title {
     font-family: "oswald", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 8rem;
+    font-size: 5rem;
     letter-spacing: 2.5rem;
     text-align: left;
-    margin-bottom: .10rem;
+    margin-bottom: 2rem;
 }
 
 .subtitle {
     font-family: "oswald", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: left;
     margin-bottom: 4rem;
 }
 
+.alt_pg_title {
+    font-family: "oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
 .section {
-    margin-left: 10%;
+    margin-left: 1%;
     width: fit-content;
     text-align: left;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .section-title {
@@ -92,4 +126,130 @@ a {
 
 a:hover {
     opacity: 0.6;
+}
+
+p {
+    font-family: "oswald", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Sub_pages */
+
+.bio-left {
+    flex: 1.8;
+    background: linear-gradient(270deg, #cce6ff, #99ccff, #ffffff, #66b3ff);
+    background-size: 800% 800%;
+    position: relative; 
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    animation: gradientShift 20s ease infinite;
+    
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bio_text {
+    line-height: 2;
+    max-width: 32rem;
+    text-align: left;
+    margin-top: .5rem;
+    margin-left: 0rem;
+}
+
+.pfp_position {
+    width: 15rem;
+    height: auto;
+    position: relative;
+    left: 30%;
+    top: -20%;
+}
+
+.spiral1_position {
+  width: 47rem;
+  left: 47%;
+  position: absolute;
+  top: -13%;
+}
+
+.spiral3_position {
+  width: 36rem;
+  left: -14%;
+  position: absolute;
+  top: 78%;
+}
+
+.hist_title {
+    font-family: "oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: right;
+    margin-bottom: 1.2rem;
+}
+
+.hist_text {
+    line-height: 2;
+    max-width: 38rem;
+    text-align: left;
+    margin-top: .5rem;
+    margin-left: 25rem;
+}
+
+.hist_sec {
+    position: absolute;
+    left: 5%;
+    top: 100%;
+}
+
+.quote1 {
+    position: absolute;
+    top: 57%;
+    left: 27%;
+}
+
+.quote1 p {
+    color:#ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 18rem;
+    margin-top: .5rem;
+    margin-left: 25rem;
+
+}
+
+.quote2 {
+    position: absolute;
+    top: 125%;
+    left: -29%;
+}
+
+.quote2 p {
+    color:#ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 18rem;
+    margin-top: .5rem;
+    margin-left: 25rem;
+
+}
+
+.quote {
+    text-align: left;
+}
+
+.quote_from {
+    text-align: right;
 }
