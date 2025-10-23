@@ -42,6 +42,8 @@ body {
     left: -140px;
     width: 1200px;
     height: 880px;
+    max-width: 100%;
+    display: block;
     border: 0;
     pointer-events: auto;
     overflow: hidden;
@@ -189,6 +191,8 @@ p {
 
 .pfp_position {
     width: 15rem;
+    max-width: 100%;
+    display: block;
     height: auto;
     position: relative;
     left: 30%;
@@ -198,6 +202,8 @@ p {
 .spiral1_position {
     width: 47rem;
     left: 47%;
+    max-width: 100%;
+    display: block;
     position: absolute;
     top: -13%;
 }
@@ -205,6 +211,8 @@ p {
 .spiral3_position {
     width: 36rem;
     left: -14%;
+    max-width: 100%;
+    display: block;
     position: absolute;
     top: 78%;
 }
@@ -310,7 +318,8 @@ p {
     top: 5%;
     left: 0%;
     width: 40%;
-    max-width: 400px;
+    max-width: 100%;
+    display: block;
     margin-top: 5rem;
     margin-left: 8rem;
     z-index: 1;
@@ -449,6 +458,8 @@ p {
 .remove-container iframe {
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    display: block;
     transform: scale(.7);
     /* adjust this value until the whole page fits */
     transform-origin: 0 0;
@@ -496,7 +507,8 @@ p {
     top: 5%;
     left: 0%;
     width: 40%;
-    max-width: 400px;
+    max-width: 100%;
+    display: block;
     margin-top: 5rem;
     margin-left: 8rem;
     z-index: 1;
@@ -537,7 +549,8 @@ p {
     top: 5%;
     left: 0%;
     width: 40%;
-    max-width: 400px;
+    max-width: 100%;
+    display: block;
     margin-top: 5rem;
     margin-left: 8rem;
     z-index: 1;
