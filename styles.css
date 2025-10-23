@@ -27,7 +27,7 @@ body {
     flex: 1.8;
     top: 5%;
     background-color: #fff;
-    position: relative; 
+    position: relative;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
 .nametag {
     position: absolute;
     top: 87%;
-    right: 13%;
+    right: 25%;
 }
 
 
@@ -92,7 +92,7 @@ body {
     font-style: normal;
     font-size: 4rem;
     text-align: left;
-    margin-bottom: 1.2rem;
+    margin-bottom: -2rem;
 }
 
 .section {
@@ -120,7 +120,7 @@ ul {
 a {
     text-decoration: underline;
     color: black;
-    display: block;
+    display: inline;
     margin: 0.25rem 0;
 }
 
@@ -142,7 +142,7 @@ p {
     flex: 1.8;
     background: linear-gradient(270deg, #cce6ff, #99ccff, #ffffff, #66b3ff);
     background-size: 800% 800%;
-    position: relative; 
+    position: relative;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -151,12 +151,21 @@ p {
     overflow-y: auto;
 
     animation: gradientShift 20s ease infinite;
-    
+
 }
+
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .bio_text {
@@ -165,6 +174,17 @@ p {
     text-align: left;
     margin-top: .5rem;
     margin-left: 0rem;
+    position: absolute;
+    top: 22%;
+}
+.bio_text2 {
+    line-height: 2;
+    max-width: 32rem;
+    text-align: left;
+    margin-top: .5rem;
+    margin-left: 0rem;
+    position: absolute;
+    top: 55%;
 }
 
 .pfp_position {
@@ -172,21 +192,21 @@ p {
     height: auto;
     position: relative;
     left: 30%;
-    top: -20%;
+    top: 42%;
 }
 
 .spiral1_position {
-  width: 47rem;
-  left: 47%;
-  position: absolute;
-  top: -13%;
+    width: 47rem;
+    left: 47%;
+    position: absolute;
+    top: -13%;
 }
 
 .spiral3_position {
-  width: 36rem;
-  left: -14%;
-  position: absolute;
-  top: 78%;
+    width: 36rem;
+    left: -14%;
+    position: absolute;
+    top: 78%;
 }
 
 .hist_title {
@@ -219,7 +239,7 @@ p {
 }
 
 .quote1 p {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
@@ -236,7 +256,7 @@ p {
 }
 
 .quote2 p {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
@@ -252,4 +272,512 @@ p {
 
 .quote_from {
     text-align: right;
+}
+
+/* ===== RAIN PAGE ===== */
+.rain-left {
+    flex: 1.8;
+    background: linear-gradient(270deg, #dcd8d3, #c5c9cb, #e2e3e5, #bfc5ca, #e9e4dd);
+    background-size: 800% 800%;
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    animation: gradientShift 20s ease infinite;
+}
+
+.rain-title {
+    position: absolute;
+    left: 7.5%;
+    top: 45%;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-size: 4.5rem;
+    letter-spacing: 2rem;
+    color: #000;
+    z-index: 2;
+    line-height: 1;
+    mix-blend-mode: multiply;
+}
+
+.rain-image {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 40%;
+    max-width: 400px;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    z-index: 1;
+    transition: transform 0.8s ease;
+}
+
+.rain-image:hover {
+    transform: scale(1.1);
+}
+
+.rain-text {
+    display: block;
+    max-width: 25rem;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    position: absolute;
+    top: 56%;
+    left: 0%;
+    margin-left: 8rem;
+    margin-top: 2rem;
+
+    font-size: 1rem;
+    color: #000;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    white-space: normal;
+    word-break: normal;
+    text-align: left;
+}
+
+.rain-body {
+    display: block;
+    max-width: 27rem;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    position: absolute;
+    top: 9.5%;
+    left: 43%;
+    margin-left: 8rem;
+    margin-top: 2rem;
+
+    color: #000;
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    white-space: normal;
+    word-break: normal;
+    text-align: left;
+}
+
+
+.rec {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 20rem;
+    margin-top: .5rem;
+    margin-left: 25rem;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: -35%;
+    left: -21%;
+}
+
+.rec a {
+    color: #ffffff;
+}
+
+.remove-title {
+    position: absolute;
+    left: 7.4%;
+    top: 48%;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    color: #000;
+    z-index: 2;
+    line-height: 1;
+    mix-blend-mode: multiply;
+}
+
+.body-leftalign {
+    display: block;
+    max-width: 27rem;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    position: absolute;
+    top: 105%;
+    left: 0%;
+    margin-left: 8rem;
+    margin-top: 2rem;
+
+    color: #000;
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    white-space: normal;
+    word-break: normal;
+    text-align: left;
+}
+
+.quote3 {
+    position: absolute;
+    top: 120%;
+    left: 19%;
+}
+
+.quote3 p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 26rem;
+    margin-top: .5rem;
+    margin-left: 25rem;
+
+}
+
+.remove-container {
+    width: 1200px;
+    height: 670px;
+    overflow: hidden;
+    position: absolute;
+    top: 200%;
+    left: 13%;
+}
+
+.remove-container iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(.7);
+    /* adjust this value until the whole page fits */
+    transform-origin: 0 0;
+    /* keeps scaling anchored to top-left */
+    border: 0;
+    overflow: hidden;
+}
+
+.cite-left {
+    flex: 1.8;
+    background: linear-gradient(270deg, #cce6ff, #99ccff, #ffffff, #66b3ff);
+    background-size: 800% 800%;
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    animation: gradientShift 20s ease infinite;
+
+}
+
+.work_cit {
+    font-family: "oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.cite_text {
+    line-height: 2;
+    max-width: 10rem;
+    text-align: left;
+    margin-top: .5rem;
+    margin-left: 0rem;
+}
+
+
+.rain-hover {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 40%;
+    max-width: 400px;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.8s ease;
+}
+
+.rain-hover:hover {
+    transform: scale(1.1);
+    content: url("images/rain_lia_display.gif");
+    animation: tilt 2s ease-in-out infinite;
+}
+
+@keyframes tilt {
+    0% {
+        transform: scale(1.1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(2deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.1) rotate(-2deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(0deg);
+    }
+}
+
+.remove-hover {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 40%;
+    max-width: 400px;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.8s ease;
+}
+
+.remove-hover:hover {
+    transform: scale(1.1);
+    content: url("images/re-move_display.gif");
+    animation: tilt 2s ease-in-out infinite;
+}
+
+.alt_pg_title,
+.hist_title,
+.rain-title,
+.remove-title {
+
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #383b3d;
+    width: 0;
+    animation: typing 2.5s steps(30, end) forwards,
+        blink 0.8s step-end 3 alternate;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+/* ========= LARGE TABLETS ========= */
+@media (max-width: 1199px) {
+    body, .container {
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+    }
+
+    .left-main, .bio-left, .rain-left, .cite-left {
+        flex: unset;
+        width: 100%;
+        padding: 2rem;
+        right: 0;
+    }
+
+    .right-main {
+        width: 100%;
+        flex: unset;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .alt_pg_title,
+    .hist_title,
+    .rain-title,
+    .remove-title {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+    .left-main iframe {
+        width: 100%;
+        height: auto;
+        top: -120px;
+        left: 0;
+        transform: scale(0.9);
+    }
+
+    .pfp_position,
+    .spiral1_position,
+    .spiral3_position {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .bio_text, .bio_text2 {
+        position: relative;
+        top: auto;
+        margin-top: 1rem;
+    }
+
+    .rain-image, .remove-hover, .rain-hover {
+        position: relative;
+        width: 60%;
+        margin: 2rem auto;
+        left: 0;
+    }
+
+    .rain-text, .rain-body, .body-leftalign {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 1rem auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .rec {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
+
+/* ========= TABLETS & SMALLER ========= */
+@media (max-width: 991px) {
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .section, .section-title, .section-end {
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .hist_text {
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+
+    .quote1, .quote2, .quote3 {
+        position: relative;
+        top: auto;
+        left: 0;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .quote1 p, .quote2 p, .quote3 p {
+        margin-left: 0;
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .remove-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+
+    .remove-container iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* ========= MOBILE PHONES ========= */
+@media (max-width: 767px) {
+    body, .container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .left-main, .right-main {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .alt_pg_title,
+    .hist_title,
+    .rain-title,
+    .remove-title {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        transform: none;
+        text-align: center;
+        position: relative;
+        border-right: none;
+        animation: none;
+    }
+
+    .rain-text, .rain-body, .body-leftalign {
+        font-size: 0.9rem;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .pfp_position, .spiral1_position, .spiral3_position {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .bio_text, .bio_text2 {
+        font-size: 0.9rem;
+        position: relative;
+        margin: 1rem 0;
+    }
+
+    .right-main {
+        background-color: #fff;
+    }
+
+    .quote1 p, .quote2 p, .quote3 p {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
 }
